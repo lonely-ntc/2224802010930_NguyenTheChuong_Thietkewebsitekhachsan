@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>A&B HOTELS</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">A&B Hotel</a>
+      <a href="#availability" class="btn">Kiểm tra phòng</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Trang Chủ</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#reservation">Đặt chổ</a>
+      <a href="#gallery">Trưng Bày</a>
+      <a href="#contact">Liên hệ</a>
+      <a href="#reviews">Đánh giá</a>
+   </nav>
+
+</section>
+
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>Phòng</h3>
+               <a href="#availability" class="btn">Kiểm tra</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>Thức ăn và đồ uống</h3>
+               <a href="#reservation" class="btn">Đặt phòng</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>Hội trường sang trọng</h3>
+               <a href="#contact" class="btn">Liên hệ</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+
+<section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>Nhận Phòng <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Kiểm Tra <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Người lớn <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 Người</option>
+               <option value="2">2 Người</option>
+               <option value="3">3 Người</option>
+               <option value="4">4 Người</option>
+               <option value="5">5 Người</option>
+               <option value="6">6 Người</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Trẻ em <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 Trẻ</option>
+               <option value="1">1 Trẻ</option>
+               <option value="2">2 Trẻ</option>
+               <option value="3">3 Trẻ</option>
+               <option value="4">4 Trẻ</option>
+               <option value="5">5 Trẻ</option>
+               <option value="6">6 Trẻ</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Phòng <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Phòng</option>
+               <option value="2">2 Phòng</option>
+               <option value="3">3 Phòng</option>
+               <option value="4">4 Phòng</option>
+               <option value="5">5 Phòng</option>
+               <option value="6">6 Phòng</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Kiểm tra Phòng" name="check" class="btn">
+   </form>
+
+</section>
+
+
+<section class="about" id="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/dichvu.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Dịch vụ</h3>
+         <p>Bản thân là công ty thành công, chúng tôi luôn đưa ra những dịch vụ tốt cho khách hàng</p>
+         <a href="#reservation" class="btn">Đặt phòng</a>
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+         <img src="images/doanuong.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Đồ ăn thức uống </h3>
+         <p>Chúng tôi phục vụ đồ ăn thức ăn tốt nhất cho khách hàng, đảm bảo vệ sinh</p>
+         <a href="#contact" class="btn">Liên hệ chúng tôi</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/hoboi.webp" alt="">
+      </div>
+      <div class="content">
+         <h3>Hồ bơi</h3>
+         <p>Khu vực hồ bơi còn được thiết kế với phong cách hiện đại với những tiểu cảnh độc đáo như các bức tượng trang trí, khu nhà chòi cho khách nghỉ ngơi.</p>
+         <a href="#availability" class="btn">Kiểm tra phòng </a>
+      </div>
+   </div>
+
+</section>
+
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Đồ ăn thức ăn</h3>
+         <p>Thức ăn và đồ uống đảm bảo vệ sinh tốt nhất cho khách hàng </p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Ăn uống ngoài trời</h3>
+         <p>Phong cảnh thoáng mát hợp cho khách hàng có thể thư giản và giải trí </p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Cảnh biển</h3>
+         <p>Cảnh quan rộng với phong cảnh hướng ra biển giúp khách hàng cảm nhận được sự rộng rãi và mát mẻ của biển </p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Nội thất </h3>
+         <p>Chúng tôi lựa chọn những đồ dùng nội thất chất lượng tốt nhất để phục vụ những yêu cầu của khách hàng</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Hồ bơi</h3>
+         <p>Khu vực hồ bơi cho khách hàng có sự thư giản và giải trí tốt nhất</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>Bãi biển nghỉ dưỡng</h3>
+         <p>Ngoài hồ bơi, chúng ta có đi dạo trên bãi biển mát mẻ</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>Đặt phòng</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Nhận phòng <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Kiểm tra phòng <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Người lớn <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 Người</option>
+               <option value="2">2 Người</option>
+               <option value="3">3 Người</option>
+               <option value="4">4 Người</option>
+               <option value="5">5 Người</option>
+               <option value="6">6 Người</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Trẻ em <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 trẻ</option>
+               <option value="1">1 trẻ</option>
+               <option value="2">2 trẻ</option>
+               <option value="3">3 trẻ</option>
+               <option value="4">4 trẻ</option>
+               <option value="5">5 trẻ</option>
+               <option value="6">6 trẻ</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Phòng <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Phòng</option>
+               <option value="2">2 Phòng</option>
+               <option value="3">3 Phòng</option>
+               <option value="4">4 Phòng</option>
+               <option value="5">5 Phòng</option>
+               <option value="6">6 Phòng</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Kiểm tra phòng" name="check" class="btn">
+   </form>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img src="images/hoboi.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Nhắn tin với chúng tôi</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Nhập tên của bạn" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="email của bạn " class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Số điện thoại" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Tin nhắn " cols="30" rows="10"></textarea>
+         <input type="submit" value="gửi" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Câu hỏi thường gặp</h3>
+         <div class="box active">
+            <h3>Dịch vụ tốt không ?</h3>
+         </div>
+         <div class="box">
+            <h3>Còn phòng trống không ?</h3>
+         </div>
+         <div class="box">
+            <h3>Thanh toán như thế nào ?</h3>
+         </div>
+         <div class="box">
+            <h3>Cần về độ tuổi không ?</h3>
+         </div>
+         <div class="box">
+            <h3>Đảm bảo về chất lượng nội thất trong khách sạn không ?</h3>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/anh-img.webp" alt="">
+            <h3>Huy</h3>
+            <p>mọi thứ đều rất gần và tiện nghi từ di chuyển chỗ ăn uống vui chơi đến những cửa hàng tiện lợi đều thuận đường đi chuyển và ko gặp khó khăn 1 nơi lý tưởng để chuyến du lịch sau.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/anh2-img.jpeg" alt="">
+            <h3>Nguyen</h3>
+            <p>Căn hộ đẹp , view đẹp , chủ hỗ trợ nhận phòng sớm vì có con nhỏ .</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/anh3-img.jpeg" alt="">
+            <h3>Anh</h3>
+            <p>Chỗ ở sạch sẽ, gọn gàng, hai bạn chủ dễ thương, vui vẻ</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/anh4-img.jpeg" alt="">
+            <h3>Tuyen</h3>
+            <p>Mọi thứ ở đây đều rất tuyệt vời, phòng luôn được dọn sạch sẽ, nhân viên thân thiện hỗ trợ hết mình. Lễ tân hướng dẫn tận tình, chu đáo.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/anh5-img.jpeg" alt="">
+            <h3>Tram</h3>
+            <p>Phòng đẹp , sạch sẽ thoáng , view toàn cảnh thành phố và biển , nhân viên thân thiện phục vụ nhiệt tình</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/anh6-img.png" alt="">
+            <h3>Bich</h3>
+            <p>cảm ơn ks vì đã hỗ trợ mình rất nhiều trong chuyến ddI lần này, các bạn nhân viên rất vui vẻ thân thiện, phòng sạch sẽ</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:0345038760"><i class="fas fa-phone"></i>(84+) 0345038760</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i>(84+) 0877309582</a>
+         <a href="mailto:222402010930@student.tdmu.edu.vn"><i class="fas fa-envelope"></i>222402010930@student.tdmu.edu.vn</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i>Thủ dầu một, Bình dương</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">Trang chủ </a>
+         <a href="#about">Giới thiệu</a>
+         <a href="#reservation">Đặt chổ</a>
+         <a href="#gallery">Trưng bày</a>
+         <a href="#contact">Liên hệ</a>
+         <a href="#reviews">Đánh giá</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2023 by mr. web designer | all rights reseved!</div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
